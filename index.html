@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>calculadora</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="operaciones.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="calculadora">
+              
+              <div>
+              <table class="botones">
+                    <tr>
+                        <td colspan="4">
+                            <input type="text" class="pantalla" id="pantalla" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                    <td><input type="button" value="7" id="num7" class="botones" onclick="pantalla(7)"></td>
+                    <td><input type="button" value="8" id="num8" class="botones" onclick="pantalla(8)"></td>
+                    <td><input type="button" value="9" id="num9" class="botones" onclick="pantalla(9)"></td>
+                    <td><input type="button" value="*" id="mult" class="botones" onclick="multiplicacion()"></td>
+                    </tr>
+
+                    <tr>
+                    <td><input type="button" value="4" id="num4" class="botones" onclick="pantalla(4)"></td>
+                    <td><input type="button" value="5" id="num5" class="botones" onclick="pantalla(5)"></td>
+                    <td><input type="button" value="6" id="num6" class="botones" onclick="pantalla(6)"></td>
+                    <td><input type="button" value="/" id="div"  class="botones" onclick="division()"></td>
+                    </tr>
+                    
+                    <tr>
+                    <td><input type="button" value="1" id="num1" class="botones" onclick="pantalla(1)"></td>
+                    <td><input type="button" value="2" id="num2" class="botones" onclick="pantalla(2)"></td>
+                    <td><input type="button" value="3" id="num3" class="botones" onclick="pantalla(3)"></td>
+                    <td><input type="button" value="-" id="rest" class="botones" onclick="resta()"></td>
+                    </tr>
+                    
+                    <tr>
+                    <td><input type="button" value="0" id="num0"  class="botones" onclick="pantalla(0)"></td>
+                    <td><input type="button" value="." id="punt"  class="botones" onclick="punto()"></td>
+                    <td><input type="button" value="=" id="igual" class="botones" onclick="igual()"></td>
+                    <td><input type="button" value="+" id="suma"  class="botones" onclick="suma()"></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <input type="button" class="botones2" id="c" value="C" onclick="restaurar()">
+                        </td>
+                        <td></td>
+                    </tr>
+              </table>
+              </div>
+
+            </div>
+              
+        </div>     
+    </body>
+</html>
